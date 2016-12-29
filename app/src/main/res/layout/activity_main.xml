@@ -15,7 +15,28 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="134dp"
-        android:background="@android:color/background_dark"></LinearLayout>
+        android:background="@android:color/background_dark">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:text="91.5\nOPB-FM\nAll Things Considered\nBob Dylan: Nobel Prize in Literature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/channel_display"
+            android:textSize="24sp"
+            android:textColor="@android:color/holo_green_light"
+            android:gravity="center" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+     </LinearLayout>
 
     <LinearLayout
         android:orientation="vertical"
