@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
@@ -42,5 +43,102 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@android:color/darker_gray"></LinearLayout>
+        android:background="@android:color/darker_gray">
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="134dp"
+            android:background="@android:color/background_dark">
+
+            <ImageButton
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:onClick="togglePower"
+                app:srcCompat="@android:drawable/ic_lock_power_off"
+                android:id="@+id/OnOff" />
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"/>
+
+            <RadioGroup
+                android:orientation="horizontal"
+                android:id="@+id/presets"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/OnOff"
+                android:layout_width="344dp"
+                android:layout_height="33dp"
+                android:layout_weight="0.41">
+
+                <RadioButton
+                    android:text="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset1"
+                    android:layout_weight="1"
+                    app:buttonTint="@android:color/background_light" />
+
+                <RadioButton
+                    android:text="2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset2"
+                    android:layout_weight="1"
+                    app:buttonTint="@android:color/background_light" />
+
+                <RadioButton
+                    android:text="3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset3"
+                    android:layout_weight="1"
+                    app:buttonTint="@android:color/background_light" />
+
+                <RadioButton
+                    android:text="4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset4"
+                    android:layout_weight="1"
+                    app:buttonTint="@android:color/background_light" />
+
+                <RadioButton
+                    android:text="5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset5"
+                    android:layout_weight="1"
+                    app:buttonTint="@android:color/background_light" />
+
+                <RadioButton
+                    android:text="6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/preset6"
+                    android:layout_weight="1"
+                    app:buttonTint="@android:color/background_light" />
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
 </LinearLayout>
