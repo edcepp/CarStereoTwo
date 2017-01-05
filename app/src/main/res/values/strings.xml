@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">CarStereoTwo</string>
+    <string name="default_banner">Radio Off</string>
+    <string name="preset1_banner">91.5\nOPB-FM\nAll Things Considered\nBob Dylan: Nobel Prize in Literature</string>
+    <string name="preset2_banner">Pre 2</string>
+    <string name="preset3_banner">Pre 3</string>
+    <string name="preset4_banner">Pre 4</string>
+    <string name="preset5_banner">Pre 5</string>
+    <string name="preset6_banner">Pre 6</string>
+
 </resources>
