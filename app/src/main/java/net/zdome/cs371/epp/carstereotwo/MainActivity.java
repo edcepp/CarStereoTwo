@@ -7,7 +7,9 @@ import android.widget.TextView;
 public class MainActivity extends AppCompatActivity {
 
     protected TextView radio_display;
-    protected int active_preset = 1;
+    protected int initial_preset = 0;
+    protected int active_preset = initial_preset;
+    protected String[] preset_banner_list;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,10 +18,13 @@ public class MainActivity extends AppCompatActivity {
 
         // Initialize display
         radio_display = (TextView)findViewById(R.id.channel_display);
-        //radio_display.setText("Testing");
         radio_display.setText(getString(R.string.default_banner));
 
-        // Initialize pesets
+        // Initialize peset banners
+        active_preset = initial_preset;
+        preset_banner_list = getResources().getStringArray(R.array.preset_banners);
+        //radio_display.setText(preset_banner_list[active_preset]);
+
 
     }
 }

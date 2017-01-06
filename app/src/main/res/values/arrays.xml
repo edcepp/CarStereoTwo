@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="preset_banners">
+        <item>91.5\nOPB-FM\nAll Things Considered\nBob Dylan: Nobel Prize in Literature</item>
+        <item>Preset Banner 2</item>
+        <item>Preset Banner 3</item>
+        <item>Preset Banner 4</item>
+        <item>Preset Banner 5</item>
+        <item>Preset Banner 6</item>
+    </string-array>
+
+
+</resources>
