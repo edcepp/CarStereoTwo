@@ -2,11 +2,11 @@
 <resources>
     <string-array name="preset_banners">
         <item>91.5\nOPB-FM\nAll Things Considered\nBob Dylan: Nobel Prize in Literature</item>
-        <item>Preset Banner 2</item>
-        <item>Preset Banner 3</item>
-        <item>Preset Banner 4</item>
-        <item>Preset Banner 5</item>
-        <item>Preset Banner 6</item>
+        <item>106.7\nThe Eagle Glassic Hits\nTom Petty Tribute</item>
+        <item>97.1\nChristmas all year long\nSantas Super Sleigh</item>
+        <item>Kig98\nNOAA\nWeather all the Time\nWinter Watch Tonight</item>
+        <item>95.9\nKBFF\nTop 40 Hits\nJustin Beiber\nLove Yourself and Sorry</item>
+        <item>98.7\nKUPl\nKeith Urban\nBlue Aint Your Color</item>
     </string-array>
 
 
