@@ -4,12 +4,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
+import android.widget.SeekBar;
+import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.graphics.Color;
 
 public class MainActivity extends AppCompatActivity {
 
     protected boolean displayOn = false;
     protected TextView radio_display;
+    protected SeekBar volumeBar;
     protected int initial_preset = 1;
     protected int active_preset = initial_preset;
     protected String[] preset_banner_list;
@@ -42,7 +45,21 @@ public class MainActivity extends AppCompatActivity {
         updateDisplay ();
         //radio_display.setText(preset_banner_list[active_preset]);
 
+        volumeBar = (SeekBar) findViewById(R.id.volumeBar);
 
+        // anonymous class test
+        /*
+        volumeBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener(){
+
+            @Override
+            public void onProgressChanged(SeekBar seekBar, int progressValue, boolean b){
+                radio_display.setText("Anonymous SeekBar changed");
+            }
+
+            public void onStartTrackingTouch(SeekBar seekBar){}
+            public void onStopTrackingTouch(SeekBar seekBar){}
+        });
+        */
     }
 
     //------ togglePower
@@ -83,6 +100,11 @@ public class MainActivity extends AppCompatActivity {
     public void selectPreset6 (View view) {
         active_preset = 6;
         updateDisplay();
+    }
+
+    //------
+    public void onProgressChanged (SeekBar s, int i, boolean b) {
+        radio_display.setText("Method SeekBar Changed");
     }
 }
 
