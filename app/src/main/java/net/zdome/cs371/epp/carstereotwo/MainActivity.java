@@ -8,11 +8,13 @@ import android.widget.SeekBar;
 import android.widget.SeekBar.OnSeekBarChangeListener;
 import android.graphics.Color;
 
-public class MainActivity extends AppCompatActivity {
+//public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements SeekBar.OnSeekBarChangeListener{
 
     protected boolean displayOn = false;
     protected TextView radio_display;
     protected SeekBar volumeBar;
+    protected final int initialVolume = 25;
     protected int initial_preset = 1;
     protected int active_preset = initial_preset;
     protected String[] preset_banner_list;
@@ -46,8 +48,10 @@ public class MainActivity extends AppCompatActivity {
         //radio_display.setText(preset_banner_list[active_preset]);
 
         volumeBar = (SeekBar) findViewById(R.id.volumeBar);
+        volumeBar.setOnSeekBarChangeListener(this);
+        volumeBar.setProgress(initialVolume);
 
-        // anonymous class test
+        // anonymous class experiment
         /*
         volumeBar.setOnSeekBarChangeListener(new OnSeekBarChangeListener(){
 
@@ -102,9 +106,12 @@ public class MainActivity extends AppCompatActivity {
         updateDisplay();
     }
 
-    //------
+    //------ OnProgreeChanged -- SeekBar
     public void onProgressChanged (SeekBar s, int i, boolean b) {
         radio_display.setText("Method SeekBar Changed");
     }
-}
+
+    public void onStartTrackingTouch(SeekBar seekBar){}
+    public void onStopTrackingTouch(SeekBar seekBar){}
+ }
 
